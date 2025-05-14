@@ -1,0 +1,235 @@
+/* Modern Dark Theme for Trade Simulator */
+
+/* Main Window */
+QMainWindow {
+    background-color: #1e1e2e;
+    color: #e0e0e0;
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+QStatusBar {
+    background-color: #272736;
+    color: #e0e0e0;
+    border-top: 1px solid #3a3a4a;
+}
+
+QStatusBar QLabel {
+    padding: 2px 8px;
+}
+
+/* Widget Panels */
+QWidget#InputPanel, QWidget#OutputPanel {
+    background-color: #272736;
+    border: 1px solid #3a3a4a;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+/* Labels */
+QLabel {
+    color: #e0e0e0;
+    font-size: 13px;
+}
+
+QLabel#PanelTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3a3a4a;
+    margin-bottom: 15px;
+}
+
+/* Form Layout */
+QFormLayout {
+    spacing: 12px;
+}
+
+/* Combo Boxes */
+QComboBox {
+    background-color: #34344a;
+    color: #e0e0e0;
+    border: 1px solid #3a3a4a;
+    border-radius: 4px;
+    padding: 6px 12px;
+    min-height: 20px;
+}
+
+QComboBox:hover {
+    border: 1px solid #5294e2;
+}
+
+QComboBox:focus {
+    border: 1px solid #5294e2;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: right center;
+    width: 20px;
+    border-left: 1px solid #3a3a4a;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #34344a;
+    color: #e0e0e0;
+    border: 1px solid #3a3a4a;
+    selection-background-color: #5294e2;
+    selection-color: #ffffff;
+}
+
+/* Line Edits */
+QLineEdit {
+    background-color: #34344a;
+    color: #e0e0e0;
+    border: 1px solid #3a3a4a;
+    border-radius: 4px;
+    padding: 6px 12px;
+    min-height: 20px;
+}
+
+QLineEdit:hover {
+    border: 1px solid #5294e2;
+}
+
+QLineEdit:focus {
+    border: 1px solid #5294e2;
+}
+
+/* Push Buttons */
+QPushButton {
+    background-color: #5294e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+QPushButton:hover {
+    background-color: #639ff5;
+}
+
+QPushButton:pressed {
+    background-color: #4284d2;
+}
+
+/* Table Widget */
+QTableWidget {
+    background-color: #272736;
+    alternate-background-color: #2d2d3f;
+    color: #e0e0e0;
+    border: 1px solid #3a3a4a;
+    gridline-color: #3a3a4a;
+    border-radius: 4px;
+}
+
+QTableWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid #3a3a4a;
+}
+
+QTableWidget::item:selected {
+    background-color: #5294e2;
+    color: #ffffff;
+}
+
+QHeaderView::section {
+    background-color: #34344a;
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    border-right: 1px solid #3a3a4a;
+    border-bottom: 1px solid #3a3a4a;
+    font-weight: bold;
+}
+
+/* Positive/Negative Values */
+QLabel[valueType="positive"] {
+    color: #50fa7b;
+}
+
+QLabel[valueType="negative"] {
+    color: #ff5555;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background: #272736;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #3a3a4a;
+    min-height: 30px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #5294e2;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #272736;
+    height: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #3a3a4a;
+    min-width: 30px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #5294e2;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* Status indicators */
+QLabel#StatusConnected {
+    color: #50fa7b;
+    font-weight: bold;
+}
+
+QLabel#StatusDisconnected {
+    color: #ff5555;
+    font-weight: bold;
+}
+
+QLabel#StatusConnecting {
+    color: #f1fa8c;
+    font-weight: bold;
+}
+
+/* Card-like effect for metrics */
+QFrame.MetricCard {
+    background-color: #2d2d3f;
+    border: 1px solid #3a3a4a;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 5px;
+}
+
+/* Value labels */
+QLabel.MetricValue {
+    color: #5294e2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+QLabel.MetricName {
+    color: #a0a0a0;
+    font-size: 12px;
+}

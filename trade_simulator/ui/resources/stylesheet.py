@@ -4,7 +4,7 @@ from trade_simulator.utils.logging import get_logger
 
 logger = get_logger(__name__)
 
-def load_stylesheet(style_name: str = "default") -> str:
+def load_stylesheet(style_name: str = "dark_theme") -> str:
     """Load and return a Qt stylesheet from the resources/styles directory"""
     try:
         # Get the absolute path to the stylesheet
@@ -31,17 +31,20 @@ def load_stylesheet(style_name: str = "default") -> str:
 # Fallback default styles if file is missing
 DEFAULT_STYLE = """
 QMainWindow {
-    background-color: #f0f0f0;
-    font-family: 'Segoe UI';
+    background-color: #1e1e2e;
+    color: #e0e0e0;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
+
 QPushButton {
-    background-color: #4CAF50;
+    background-color: #5294e2;
     color: white;
     border: none;
     padding: 8px;
     border-radius: 4px;
 }
+
 QPushButton:hover {
-    background-color: #45a049;
+    background-color: #639ff5;
 }
 """

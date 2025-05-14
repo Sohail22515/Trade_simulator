@@ -101,6 +101,7 @@ class TradeSimulator(QObject):
         """Process incoming WebSocket messages"""
         try:
             self._order_book.update_book(message)
+            self.logger.debug(f"Received message: {message}")
             # Additional processing can be added here
         except Exception as e:
             self.logger.error(f"Message processing failed: {e}", exc_info=True)
