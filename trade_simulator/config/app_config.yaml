@@ -1,0 +1,21 @@
+websocket:
+  url: "wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP"
+  reconnect_delay: 5
+
+app:
+  ui_update_interval_ms: 100
+
+exchanges:
+  OKX:
+    fee_tiers:
+      1:
+        maker: 0.0008
+        taker: 0.0010
+      2:
+        maker: 0.0007
+        taker: 0.0009
+  BINANCE:
+    fee_tiers:
+      1:
+        maker: 0.0002
+        taker: 0.0004

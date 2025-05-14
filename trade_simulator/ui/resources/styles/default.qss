@@ -1,0 +1,33 @@
+/* Main window styling */
+QMainWindow {
+    background-color: #f5f5f5;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Panel styling */
+QWidget {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* Button styling */
+QPushButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+
+/* Input fields */
+QLineEdit, QComboBox {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 3px;
+}
